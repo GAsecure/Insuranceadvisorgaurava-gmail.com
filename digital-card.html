@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gaurav Arora | Insurance Advisor</title>
+<title>Digital Card | Gaurav Arora</title>
+
+<meta name="description"
+content="Official Digital Visiting Card of Gaurav Arora - Insurance Advisor">
+
+<link rel="icon" href="assets/icon-192.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -16,14 +24,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
 
-background:linear-gradient(135deg,#0b4fa3,#1b6ed6,#3ca7ff);
+background:linear-gradient(135deg,#0B4FA3,#1B6ED6,#55B5FF);
 
-min-height:100vh;
+padding:25px;
 
 display:flex;
 
@@ -31,39 +39,38 @@ justify-content:center;
 
 align-items:center;
 
-padding:25px;
+min-height:100vh;
 
 }
 
 .card{
 
 width:100%;
-
-max-width:420px;
+max-width:430px;
 
 background:#fff;
 
-border-radius:25px;
+border-radius:28px;
 
 overflow:hidden;
 
-box-shadow:0 20px 40px rgba(0,0,0,.25);
+box-shadow:0 20px 45px rgba(0,0,0,.25);
 
 }
 
-.top{
+.header{
 
-padding:30px;
+background:linear-gradient(135deg,#0B4FA3,#1B6ED6);
+
+padding:35px 25px;
 
 text-align:center;
-
-background:linear-gradient(135deg,#0b4fa3,#1b6ed6);
 
 color:#fff;
 
 }
 
-.top img{
+.profile{
 
 width:130px;
 
@@ -75,57 +82,131 @@ border:5px solid white;
 
 object-fit:cover;
 
-margin-bottom:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
 
 }
 
-.top h1{
+.header h1{
+
+margin-top:18px;
 
 font-size:30px;
 
+font-weight:700;
+
 }
 
-.top p{
+.designation{
+
+margin-top:6px;
+
+font-size:17px;
+
+opacity:.95;
+
+}
+
+.company{
 
 margin-top:8px;
 
-font-size:18px;
+font-size:14px;
 
-opacity:.9;
+letter-spacing:1px;
+
+opacity:.8;
 
 }
 
-.buttons{
+.services{
 
-padding:20px;
+padding:22px;
 
 display:grid;
 
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(2,1fr);
 
-gap:15px;
+gap:12px;
+
+background:#f8fbff;
 
 }
 
-.btn{
+.service{
+
+background:white;
+
+border-radius:15px;
+
+padding:15px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.service i{
+
+font-size:26px;
+
+color:#1556B8;
+
+margin-bottom:10px;
+
+}
+
+.service span{
+
+display:block;
+
+font-size:14px;
+
+font-weight:600;
+
+color:#333;
+
+}
+
+.actions{
+
+padding:22px;
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:14px;
+
+}
+
+.action{
 
 text-decoration:none;
 
 padding:15px;
 
-border-radius:15px;
+border-radius:14px;
+
+font-weight:600;
 
 text-align:center;
 
-color:white;
+color:#fff;
 
-font-weight:bold;
+transition:.3s;
+
+}
+
+.action:hover{
+
+transform:translateY(-3px);
 
 }
 
 .call{
 
-background:#0b4fa3;
+background:#1556B8;
 
 }
 
@@ -137,31 +218,27 @@ background:#25D366;
 
 .email{
 
-background:#ff3b30;
+background:#E53935;
 
 }
 
-.website{
+.contact{
 
-background:#ff9800;
+background:#6A1B9A;
 
 }
 
 .download{
 
-background:#6a1b9a;
+background:#FB8C00;
 
-}
-
-.share{
-
-background:#00a8ff;
+grid-column:1/3;
 
 }
 
 .qr{
 
-padding:20px;
+padding:25px;
 
 text-align:center;
 
@@ -171,9 +248,19 @@ text-align:center;
 
 width:180px;
 
-border-radius:15px;
+border-radius:18px;
 
-box-shadow:0 10px 20px rgba(0,0,0,.2);
+box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+}
+
+.qr p{
+
+margin-top:12px;
+
+font-size:14px;
+
+color:#666;
 
 }
 
@@ -181,11 +268,13 @@ box-shadow:0 10px 20px rgba(0,0,0,.2);
 
 padding:20px;
 
+background:#f5f7fa;
+
 text-align:center;
 
-color:#666;
+font-size:13px;
 
-font-size:14px;
+color:#666;
 
 }
 
@@ -197,20 +286,68 @@ font-size:14px;
 
 <div class="card">
 
-<div class="top">
+<div class="header">
 
-<img src="assets/gaurav.jpg">
+<img src="assets/gaurav.jpg"
+class="profile"
+alt="Gaurav Arora">
 
 <h1>Gaurav Arora</h1>
 
-<p>Insurance Advisor</p>
+<p class="designation">
+
+Insurance Advisor
+
+</p>
+
+<p class="company">
+
+Health • Motor • Life • Home Insurance
+
+</p>
 
 </div>
 
-<div class="buttons">
+<div class="services">
 
-<a class="btn call"
-href="tel:+918595050607">
+<div class="service">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<span>Health</span>
+
+</div>
+
+<div class="service">
+
+<i class="fa-solid fa-car-side"></i>
+
+<span>Motor</span>
+
+</div>
+
+<div class="service">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+<span>Life</span>
+
+</div>
+
+<div class="service">
+
+<i class="fa-solid fa-house"></i>
+
+<span>Home</span>
+
+</div>
+
+</div>
+
+<div class="actions">
+
+<a href="tel:+918595050607"
+class="action call">
 
 <i class="fa-solid fa-phone"></i>
 
@@ -218,69 +355,104 @@ Call
 
 </a>
 
-<a class="btn whatsapp"
+<a href="https://wa.me/918595050607"
+class="action whatsapp">
 
-href="https://wa.me/918595050607">
-
-<i class="fab fa-whatsapp"></i>
+<i class="fa-brands fa-whatsapp"></i>
 
 WhatsApp
 
 </a>
-            <div class="action-buttons">
-                <a href="tel:+918595050607" class="btn">
-                    📞 Call
-                </a>
 
-                <a href="https://wa.me/918595050607" class="btn" target="_blank">
-                    💬 WhatsApp
-                </a>
+<a href="mailto:insuranceadvisorgaurava@gmail.com"
+class="action email">
 
-                <a href="mailto:insuranceadvisorgaurava@gmail.com" class="btn">
-                    📧 Email
-                </a>
+<i class="fa-solid fa-envelope"></i>
 
-                <a href="https://gasecure.github.io/Insuranceadvisorgaurava/" class="btn" target="_blank">
-                    🌐 Website
-                </a>
+Email
 
-                <a href="download.html" class="btn">
-                    ⬇ Download Card
-                </a>
+</a>
 
-                <button class="btn" onclick="saveContact()">
-                    💾 Save Contact
-                </button>
+<a href="contact.vcf"
+download
+class="action contact">
+
+<i class="fa-solid fa-address-card"></i>
+
+Save Contact
+
+</a>
+
+<a href="assets/card.jpg"
+download
+class="action download">
+
+<i class="fa-solid fa-download"></i>
+
+Download Digital Card
+
+</a>
+
             </div>
+<div class="qr">
 
-        </div>
+<img src="assets/qr.png"
+alt="QR Code">
 
-    </div>
+<p>
 
-<script>
+Scan QR Code To Open My Digital Insurance Card
 
-function saveContact(){
+</p>
 
-const vcf=`BEGIN:VCARD
-VERSION:3.0
-FN:Gaurav Arora
-ORG:GA Secure Insurance
-TITLE:Insurance Advisor
-TEL;TYPE=CELL:+918595050607
-EMAIL:insuranceadvisorgaurava@gmail.com
-URL:https://gasecure.github.io/Insuranceadvisorgaurava/
-END:VCARD`;
+</div>
 
-const blob=new Blob([vcf],{type:'text/vcard'});
-const link=document.createElement('a');
+<div class="footer">
 
-link.href=URL.createObjectURL(blob);
-link.download='Gaurav_Arora.vcf';
-link.click();
+<p>
 
-}
+<strong>Gaurav Arora</strong>
 
-</script>
+</p>
+
+<p>
+
+Professional Insurance Advisor
+
+</p>
+
+<p>
+
+Health • Motor • Life • Home Insurance
+
+</p>
+
+<p style="margin-top:10px;">
+
+<i class="fa-solid fa-phone"></i>
+
++91 85950 50607
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+insuranceadvisorgaurava@gmail.com
+
+</p>
+
+<p style="margin-top:15px;color:#1556B8;font-weight:600;">
+
+Serving Across India
+
+</p>
+
+</div>
+
+</div>
 
 </body>
+
 </html>
