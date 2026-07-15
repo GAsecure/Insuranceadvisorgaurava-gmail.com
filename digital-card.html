@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Gaurav Arora | Insurance Advisor</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#0b4fa3,#1b6ed6,#3ca7ff);
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:25px;
+
+}
+
+.card{
+
+width:100%;
+
+max-width:420px;
+
+background:#fff;
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.top{
+
+padding:30px;
+
+text-align:center;
+
+background:linear-gradient(135deg,#0b4fa3,#1b6ed6);
+
+color:#fff;
+
+}
+
+.top img{
+
+width:130px;
+
+height:130px;
+
+border-radius:50%;
+
+border:5px solid white;
+
+object-fit:cover;
+
+margin-bottom:15px;
+
+}
+
+.top h1{
+
+font-size:30px;
+
+}
+
+.top p{
+
+margin-top:8px;
+
+font-size:18px;
+
+opacity:.9;
+
+}
+
+.buttons{
+
+padding:20px;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+}
+
+.btn{
+
+text-decoration:none;
+
+padding:15px;
+
+border-radius:15px;
+
+text-align:center;
+
+color:white;
+
+font-weight:bold;
+
+}
+
+.call{
+
+background:#0b4fa3;
+
+}
+
+.whatsapp{
+
+background:#25D366;
+
+}
+
+.email{
+
+background:#ff3b30;
+
+}
+
+.website{
+
+background:#ff9800;
+
+}
+
+.download{
+
+background:#6a1b9a;
+
+}
+
+.share{
+
+background:#00a8ff;
+
+}
+
+.qr{
+
+padding:20px;
+
+text-align:center;
+
+}
+
+.qr img{
+
+width:180px;
+
+border-radius:15px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.footer{
+
+padding:20px;
+
+text-align:center;
+
+color:#666;
+
+font-size:14px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="top">
+
+<img src="assets/gaurav.jpg">
+
+<h1>Gaurav Arora</h1>
+
+<p>Insurance Advisor</p>
+
+</div>
+
+<div class="buttons">
+
+<a class="btn call"
+href="tel:+918595050607">
+
+<i class="fa-solid fa-phone"></i>
+
+Call
+
+</a>
+
+<a class="btn whatsapp"
+
+href="https://wa.me/918595050607">
+
+<i class="fab fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+            <div class="action-buttons">
+                <a href="tel:+918595050607" class="btn">
+                    📞 Call
+                </a>
+
+                <a href="https://wa.me/918595050607" class="btn" target="_blank">
+                    💬 WhatsApp
+                </a>
+
+                <a href="mailto:insuranceadvisorgaurava@gmail.com" class="btn">
+                    📧 Email
+                </a>
+
+                <a href="https://gasecure.github.io/Insuranceadvisorgaurava/" class="btn" target="_blank">
+                    🌐 Website
+                </a>
+
+                <a href="download.html" class="btn">
+                    ⬇ Download Card
+                </a>
+
+                <button class="btn" onclick="saveContact()">
+                    💾 Save Contact
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+<script>
+
+function saveContact(){
+
+const vcf=`BEGIN:VCARD
+VERSION:3.0
+FN:Gaurav Arora
+ORG:GA Secure Insurance
+TITLE:Insurance Advisor
+TEL;TYPE=CELL:+918595050607
+EMAIL:insuranceadvisorgaurava@gmail.com
+URL:https://gasecure.github.io/Insuranceadvisorgaurava/
+END:VCARD`;
+
+const blob=new Blob([vcf],{type:'text/vcard'});
+const link=document.createElement('a');
+
+link.href=URL.createObjectURL(blob);
+link.download='Gaurav_Arora.vcf';
+link.click();
+
+}
+
+</script>
+
+</body>
+</html>
