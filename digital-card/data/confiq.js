@@ -1,107 +1,139 @@
 /* ==========================================
-   DIGITAL CARD V4
-   CONFIGURATION FILE
-   File: digital-card/data/configuration.js
+   GA SECURE DIGITAL CARD
+   CONFIGURATION
 ========================================== */
 
 const CONFIG = {
 
-    /* ===============================
-       PERSONAL INFORMATION
-    =============================== */
+    /* ===========================
+       BRAND
+    =========================== */
 
-    name: "Gaurav Arora",
+    brand: "GA Secure",
+
+    owner: "Gaurav Arora",
+
     designation: "Insurance Advisor",
-    company: "GA Secure Insurance Services",
-    tagline: "Secure Today • Protect Tomorrow",
 
-    /* ===============================
-       CONTACT DETAILS
-    =============================== */
+    slogan: "Secure Today • Protect Tomorrow",
 
-    mobile: "+918595050607",
+    /* ===========================
+       CONTACT
+    =========================== */
+
+    phone: "+918595050607",
+
     whatsapp: "918595050607",
-    email: "insuranceadvisorgaurava@gmail.com",
 
-    /* ===============================
-       WEBSITE
-    =============================== */
+    email: "insuranceadvisorgaurava@gmail.com",
 
     website: "https://gasecure.github.io/Insuranceadvisorgaurava/",
 
-    /* ===============================
-       ADDRESS
-    =============================== */
-
     address: "Faridabad, Haryana, India",
 
-    googleMaps: "https://maps.google.com/?q=Faridabad,Haryana",
-
-    /* ===============================
-       FILES
-    =============================== */
+    /* ===========================
+       ASSETS
+    =========================== */
 
     profileImage: "assets/gaurav.webp",
+
     qrImage: "assets/qr.png",
+
     backgroundImage: "assets/bg.webp",
+
     favicon: "assets/favicon.png",
 
-    /* ===============================
-       INTERNAL LINKS
-    =============================== */
+    contactFile: "../contact.vcf",
 
-    saveContact: "../contact.vcf",
     quotePage: "../quote.html",
+
     claimPage: "../claim.html",
 
-    /* ===============================
-       SOCIAL MEDIA
-    =============================== */
+    /* ===========================
+       SOCIAL
+    =========================== */
 
     facebook: "",
+
     instagram: "",
+
     linkedin: "",
+
     youtube: "",
-    twitter: "",
 
-    /* ===============================
-       BUSINESS HOURS
-    =============================== */
+    telegram: "",
 
-    officeHours: "Monday - Saturday | 9:00 AM - 7:00 PM",
+    x: "",
 
-    /* ===============================
-       SERVICES
-    =============================== */
+    /* ===========================
+       INSURANCE COMPANIES
+    =========================== */
 
-    services: [
-        "Health Insurance",
-        "Life Insurance",
-        "Motor Insurance",
-        "Home Insurance",
-        "Travel Insurance",
-        "Personal Accident Insurance",
-        "Commercial Vehicle Insurance",
-        "Fire Insurance"
+    companies: [
+
+        {
+            name: "Star Health",
+            logo: "assets/logos/star-health.webp"
+        },
+
+        {
+            name: "Niva Bupa",
+            logo: "assets/logos/niva-bupa.webp"
+        },
+
+        {
+            name: "Care Health",
+            logo: "assets/logos/care-health.webp"
+        },
+
+        {
+            name: "HDFC ERGO",
+            logo: "assets/logos/hdfc-ergo.webp"
+        },
+
+        {
+            name: "ICICI Lombard",
+            logo: "assets/logos/icici-lombard.webp"
+        },
+
+        {
+            name: "TATA AIG",
+            logo: "assets/logos/tata-aig.webp"
+        },
+
+        {
+            name: "Bajaj Allianz",
+            logo: "assets/logos/bajaj-allianz.webp"
+        },
+
+        {
+            name: "SBI General",
+            logo: "assets/logos/sbi-general.webp"
+        }
+
     ],
 
-    /* ===============================
-       INSURANCE PARTNERS
-    =============================== */
+    /* ===========================
+       WHATSAPP TEMPLATES
+    =========================== */
 
-    partners: [
-        "Star Health",
-        "Niva Bupa",
-        "Care Health",
-        "HDFC ERGO",
-        "ICICI Lombard",
-        "TATA AIG",
-        "SBI General",
-        "Bajaj Allianz",
-        "Reliance General",
-        "Future Generali",
-        "Kotak General",
-        "Liberty General"
-    ]
+    messages: {
+
+        quote:
+        "Hello Mr Gaurav, I need an Insurance Quote.",
+
+        renewal:
+        "Hello Mr Gaurav, I want to renew my insurance policy.",
+
+        claim:
+        "Hello Mr Gaurav, I need Claim Assistance.",
+
+        calculator:
+        "Hello Mr Gaurav, I need Premium Calculator.",
+
+        consultation:
+        "Hello Mr Gaurav, I need Insurance Consultation."
+
+    }
 
 };
